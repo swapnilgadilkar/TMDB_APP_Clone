@@ -3,7 +3,11 @@
 // import mockAsyncStorage from '@react-native-async-storage/async-storage/jest/async-storage-mock';
 // import mockSafeAreaContext from 'react-native-safe-area-context/jest/mock';
 // import mockRNCNetInfo from '@react-native-community/netinfo/jest/netinfo-mock.js';
+import {setupStore} from '@store/store';
 
+jest.mock('react-native-vector-icons/Ionicons', () => 'Ionicons');
+jest.mock('reactotron-react-native');
+export const mockStore = setupStore();
 // jest.mock('@react-native-community/netinfo', () => mockRNCNetInfo);
 // jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 // jest.mock('react-native-device-info', () => mockRNDeviceInfo);

@@ -11,6 +11,8 @@ module.exports = {
           '@components': './src/components',
           '@common': ['./src/components/common'],
           '@context': './src/context',
+          '@features': './src/features',
+          '@authentication': './src/features/authentication',
           '@hooks': './src/hooks',
           '@i18n': './src/i18n',
           '@config': './src/config',
@@ -24,5 +26,6 @@ module.exports = {
         },
       },
     ],
+    'react-native-reanimated/plugin',
   ],
 };
