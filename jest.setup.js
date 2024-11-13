@@ -4,6 +4,7 @@
 // import mockSafeAreaContext from 'react-native-safe-area-context/jest/mock';
 // import mockRNCNetInfo from '@react-native-community/netinfo/jest/netinfo-mock.js';
 import {setupStore} from '@store/store';
+import 'react-native-gesture-handler/jestSetup';
 
 jest.mock('react-native-vector-icons/Ionicons', () => 'Ionicons');
 jest.mock('reactotron-react-native');

@@ -13,7 +13,7 @@ const LoginScreen = () => {
     if (data) {
       dispatch(loginSuccess({token: data.token, user: data.user}));
     } else {
-      console.log('ERROR WHILE', error);
+      console.error('ERROR WHILE', error);
     }
   };
 
