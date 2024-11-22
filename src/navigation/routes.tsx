@@ -8,7 +8,7 @@ const Routes = () => {
   const isAuthenticated = useAppSelector(state => state?.auth?.isAuthenticated);
   return (
     <NavigationContainer>
-      {isAuthenticated ? <ProtectedRoutes /> : <AuthRoutes />}
+      {true ? <ProtectedRoutes /> : <AuthRoutes />}
     </NavigationContainer>
   );
 };
